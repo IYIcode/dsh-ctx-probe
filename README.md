@@ -1,5 +1,11 @@
 # dsh-ctx-probe
 
+**自动探测本地模型上下文** — Auto-detect the real context window of local
+model servers (llama.cpp / Ollama) and keep `llm-pi-ai` in sync, in both
+directions, zero-config.
+
+> 中文版（简体）：[README.zh.md](./README.zh.md)
+
 [![npm version](https://img.shields.io/npm/v/dsh-ctx-probe.svg)](https://www.npmjs.com/package/dsh-ctx-probe)
 [![npm downloads](https://img.shields.io/npm/dm/dsh-ctx-probe.svg)](https://www.npmjs.com/package/dsh-ctx-probe)
 [![DSH Plugin](https://img.shields.io/badge/DSH-plugin-4d6bfe.svg)](https://github.com/topics/dsh-plugin)
