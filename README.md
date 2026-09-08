@@ -68,10 +68,10 @@ cache.
 
 ## Install (web profile)
 
-From npm (published):
+From GitHub (current source of truth):
 
 ```powershell
-dsh plugin --profile web add dsh-ctx-probe
+dsh plugin --profile web add https://github.com/IYIcode/dsh-ctx-probe
 ```
 
 Or from a local copy:
@@ -79,6 +79,9 @@ Or from a local copy:
 ```powershell
 dsh plugin --profile web add C:\path\to\dsh-ctx-probe
 ```
+
+(Once published to npm, `dsh plugin --profile web add dsh-ctx-probe` will also
+work.)
 
 Either way the package reconciles `dsh.profile.bundles` in the profile's
 `package.json` and links into the profile's `node_modules`; restart the DSH Web
