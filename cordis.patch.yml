@@ -1,0 +1,5 @@
+# dsh-ctx-probe — profile plugin patch.
+# One row: mount the plugin module from the profile's node_modules (bare name).
+- insert:
+    - id: ctx-probe
+      name: dsh-ctx-probe

@@ -1,0 +1,40 @@
+{
+  "name": "dsh-ctx-probe",
+  "version": "0.1.0",
+  "description": "Probe local model servers (llama.cpp / Ollama) for the real runtime context window and keep llm-pi-ai's contextWindow in sync automatically — tighter before overflow, wider when the server grows. Zero-config profile plugin for DeepSeek Harness.",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "llama.cpp",
+    "llamaserver",
+    "ollama",
+    "context-window",
+    "llm-pi-ai",
+    "context-overflow"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IYIcode/dsh-ctx-probe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IYIcode/dsh-ctx-probe/issues"
+  },
+  "homepage": "https://github.com/IYIcode/dsh-ctx-probe#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
